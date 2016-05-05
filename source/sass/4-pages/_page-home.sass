@@ -1,5 +1,4 @@
 body
-  margin: 10px
   background-color: $silver
   overflow-x: hidden
 
@@ -7,6 +6,8 @@ body
   text-align: center
 
   header
+    background: #FFFFFF
+    box-shadow: 0 1px 3px 0
     .logo
         img
             float: left
@@ -26,6 +27,8 @@ body
             height: 3px
             position: relative
             text-align: left
+            @media (max-width: 960px)
+                visibility: visible
             &::before, &::after
                 // important to have an empty content placeholder
                 content: ""
@@ -37,19 +40,54 @@ body
                 top: 13px
             &::after
                 bottom: -27px
+        nav.main_nav
+            float: right
+            @media (min-width: 960px)
+                visibility: visible
+            ul
+                padding: 0
+                li
+                    display: inline-block
+                    text-decoration: none
+                    a
+                        text-transform: uppercase
+                        color: #394D54
+                        font-size: 1.4rem
+                        padding: 0 10px
+                        @media (min-width: 960px) and (max-width: 1110px)
+                            padding: 0 5px
+                            font-size: 1.3rem
+                    .button
+                        padding: 0 25px
 
   section
-    max-width: 600px
-    margin: 50px auto
-    padding: 40px
+    max-width: 1120px
+    margin: 0px auto
+    padding: 20px 20px
     position: relative
-    background-color: rgba(255,255,255,0.7)
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
+    background-color: #FFFFFF
+    // box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
+    @media (max-width: 768px)
+        max-width: 640px
 
-    &:first-child
-      background:
-        image: url(../img/tools.png)
-        position: center
+    // &:first-child
+    //   background:
+    //     image: url(../img/tools.png)
+    //     position: center
+
+  .above_fold
+    background: rgba(255, 199, 24, .52) url('/assets/img/pattern_bg.jpg') no-repeat center center
+    .circle
+     border-radius: 50%
+     width: 223px
+     height: 223px
+     background: #FFFFFF
+     position: relative
+     overflow: hidden
+     img
+      position: absolute
+      left: 20px
+      bottom: -9px
 
     h1
       font-weight: 700

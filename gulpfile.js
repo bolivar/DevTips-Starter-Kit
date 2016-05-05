@@ -149,7 +149,7 @@ gulp.task('jade', function () {
 
 //html task
 gulp.task('html', function() {
-    gulp.src("source/views/*.html")
+    gulp.src("build/*.html")
         .pipe(gulp.dest('build/'));
 })
 
