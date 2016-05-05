@@ -1,0 +1,86 @@
+body
+  margin: 10px
+  background-color: $silver
+  overflow-x: hidden
+
+.page-home
+  text-align: center
+
+  header
+    .logo
+        img
+            float: left
+    .menu_wrapper
+        height: 30px
+        top: 8px
+        &:hover
+            cursor: pointer
+            .mobile_menu
+                background: #6C6799
+                &::before, &::after
+                    background: #6C6799
+        .mobile_menu
+            float: right
+            width: 30px
+            background: #34324A
+            height: 3px
+            position: relative
+            text-align: left
+            &::before, &::after
+                // important to have an empty content placeholder
+                content: ""
+                width: 30px
+                background: #34324A
+                height: 3px
+                position: absolute
+            &::before
+                top: 13px
+            &::after
+                bottom: -27px
+
+  section
+    max-width: 600px
+    margin: 50px auto
+    padding: 40px
+    position: relative
+    background-color: rgba(255,255,255,0.7)
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
+
+    &:first-child
+      background:
+        image: url(../img/tools.png)
+        position: center
+
+    h1
+      font-weight: 700
+      line-height: 1
+      margin: 20px 0
+      letter-spacing: 1px
+
+  img
+    max-width: 100%
+
+  .flex-video-wrap
+    max-width: 640px
+    display: inline-block
+    width: 100%
+
+  pre
+    text-align: left
+    font-family: 'Fira Mono', monospace
+    font-size: 30px
+    color: darken($silver, 5%)
+    position: absolute
+    top: -50px
+    left: -50px
+    z-index: -1
+    pointer-events: none
+
+    @media (max-width: 500px)
+      font-size: 20px
+
+  article
+    margin-bottom: 50px
+
+    &:last-child
+      margin-bottom: 0px
