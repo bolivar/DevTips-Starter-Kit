@@ -1,0 +1,104 @@
+header
+    background: #FFFFFF
+    box-shadow: 0 1px 3px 0
+    z-index: 1
+    position: relative
+
+    .logo
+        img
+            float: left
+            width: 50px    
+
+    .menu_wrapper
+        width: 100%
+        position: absolute
+        top: 90px
+        left: 0
+        background: white
+        padding: 0
+        @media (min-width: 960px)
+            width: 50%
+            position: relative
+            top: auto
+            left: auto
+
+    nav.main_nav
+        float: right
+        width: 100%
+        @media (max-width: 960px)
+            display: none
+        @media (min-width: 960px)
+            width: auto
+            display: block !important
+            ul li
+                display: inline-block
+
+        ul
+            padding: 0
+            li
+                display: block
+                text-decoration: none
+                border-bottom: 1px solid #ccc
+                @media (max-width: 960px)
+                    &:nth-child(1)
+                        border-top: 1px solid #ccc
+                &:last-child
+                    border-bottom: 1px solid white
+                @media (min-width: 960px)
+                    border: none
+
+                a
+                    text-transform: uppercase
+                    color: #394D54
+                    font-size: 1.4rem
+                    padding: 20px
+                    display: block
+                    transition: 300ms ease-in-out
+                    &:hover
+                        text-decoration: none
+                        color: #ccc
+                    @media (min-width: 960px)
+                        padding: 0 10px
+                    @media (max-width: 960px)
+                        &:hover
+                            text-decoration: none
+                            color: white
+                            background: #FEE18C
+
+                    @media (min-width: 960px) and (max-width: 1110px)
+                        padding: 0 5px
+                        font-size: 1.3rem
+                .button
+                    padding: 0 25px
+
+    .mobile_menu_toggle
+        float: right
+        width: 50px
+        height: 50px
+        position: relative
+        text-align: left
+        display: none
+
+        &:hover
+            cursor: pointer
+
+        span,
+        &::before,
+        &::after
+            // important to have an empty content placeholder
+            content: ""
+            width: 50px
+            background: #34324A
+            height: 3px
+            text-align: left
+            position: absolute
+
+        span
+            top: 24px
+
+        &::after
+            position: absolute
+            bottom: 0px
+
+        @media (max-width: 960px)
+            display: block

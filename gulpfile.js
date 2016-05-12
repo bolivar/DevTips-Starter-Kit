@@ -51,7 +51,10 @@ var
   syncOpt = {
     server: {
       baseDir: dest,
-      index: config.syncOptions.index || 'index.html'
+      index: config.syncOptions.index || 'index.html',
+      about: config.syncOptions.about || 'about.html',
+      jobs: config.syncOptions.jobs || 'jobs.html',
+      skills: config.syncOptions.skills || 'skills.html'
     },
     open: config.syncOptions.open || false,
     notify: config.syncOptions.notify || true
@@ -149,7 +152,7 @@ gulp.task('jade', function () {
 
 //html task
 gulp.task('html', function() {
-    gulp.src("build/*.html")
+    gulp.src("source/views/*.html")
         .pipe(gulp.dest('build/'));
 })
 

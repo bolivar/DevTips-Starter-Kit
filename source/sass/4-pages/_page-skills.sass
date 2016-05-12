@@ -1,0 +1,79 @@
+body
+    background-color: $silver
+    overflow-x: hidden
+
+    .page-skills
+        text-align: center
+        background: rgba(255, 199, 24, .52) url('/assets/img/pattern_bg.jpg') repeat-y
+
+        .above_fold
+            margin-top: 50px
+
+        section
+            max-width: 1120px
+            margin: 0px auto
+            padding: 20px 20px
+            position: relative
+            background: #FFFFFF
+            border-radius: 14px
+            @media (max-width: 768px)
+                max-width: 640px
+
+            .text-wrapper
+                max-width: 650px
+                margin: 0 auto
+                text-align: left
+
+                h2
+                    text-align: center
+                    text-transform: uppercase
+                    margin: 40px 0
+
+                h3
+                    text-transform: uppercase
+                    text-align: center
+                    margin: 40px 0
+
+                ul li
+                    list-style: none
+                    img
+                        width: 50px
+                        clear: both
+                        display: block
+                        margin-bottom: 10px
+                        @keyframes swing
+                          20%
+                            transform: rotate3d(0, 0, 1, 15deg)
+
+                          40%
+                            transform: rotate3d(0, 0, 1, -10deg)
+
+                          60%
+                            transform: rotate3d(0, 0, 1, 5deg)
+
+                          80%
+                            transform: rotate3d(0, 0, 1, -5deg)
+
+                          to
+                            transform: rotate3d(0, 0, 1, 0deg)
+
+                p
+                    clear: both
+                    text-align: center
+                    padding: 20px 0
+                    line-height: 2.6rem
+                    font-size: 1.8rem
+
+                .swing
+                    transform-origin: top center
+                    animation-name: swing
+
+                .animated
+                    animation-duration: 1s
+                    animation-fill-mode: both
+
+
+        footer
+            background: #F5F5F5
+            padding: 15px 0
+            margin-top: 50px
