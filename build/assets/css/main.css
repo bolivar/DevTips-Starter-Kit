@@ -6948,6 +6948,7 @@ body {
 
 .page-home {
   text-align: center;
+  height: calc(100vh - 42vh);
 }
 
 .page-home section {
@@ -6958,7 +6959,7 @@ body {
 }
 
 .page-home .above_fold {
-  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") no-repeat center center;
+  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat;
   z-index: 0;
   position: relative;
 }
@@ -7136,7 +7137,7 @@ body {
 
 body .page-about {
   text-align: center;
-  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") no-repeat center center;
+  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat;
 }
 
 body .page-about .above_fold {
@@ -7193,7 +7194,7 @@ body {
 
 body .page-jobs {
   text-align: center;
-  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat-y;
+  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat;
 }
 
 body .page-jobs .above_fold {
@@ -7256,7 +7257,7 @@ body {
 
 body .page-contact {
   text-align: center;
-  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat-y;
+  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat;
 }
 
 body .page-contact .above_fold {
@@ -7329,7 +7330,7 @@ body {
 
 body .page-skills {
   text-align: center;
-  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat-y;
+  background: rgba(255, 199, 24, 0.52) url("/assets/img/pattern_bg.jpg") repeat;
 }
 
 body .page-skills .above_fold {
